@@ -1,0 +1,181 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body
+{
+    background-color: #000;
+}
+.container
+{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    margin-top: 10px;
+    /* background-color: #222; */
+    position: relative;
+
+}
+nav
+{
+    /* background-color: #222; */
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .nav-logo 
+{
+    width:60px;
+    /* background-color: aqua; */
+}
+nav .nav-logo img 
+{
+    width: 100%;
+}
+
+
+nav .nav-links ul li
+{
+ display: inline-block;
+
+}
+nav .nav-links ul li a
+{
+    text-decoration: none;
+    margin: 0px 10px;
+    color: #fff;
+}
+
+header
+{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+
+}
+.header-content
+{
+    width: 50%;
+    /* background-color: aqua; */
+}
+.header-img
+{
+    width: 50%;
+    /* background-color: #09c; */
+    text-align: right;
+}
+.header-img img
+{
+    width: 200px;
+    
+}
+
+.header-content h2
+{
+    text-transform: capitalize;
+    color: #fff;
+    margin: 10px 0px;
+   font-size: 40px;
+}
+.header-content p
+{
+    font-size: 17px;
+    color: lightgrey;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.header-content button
+{
+    padding: 7px 10px;
+    border-radius: 50px;
+    border: none;
+    margin: 30px 0px;
+    border: 1px solid #fff;
+    background-color: transparent;
+
+}
+.header-content button a
+{
+    text-decoration:none ;
+    font-size: 17px;
+    color:#fff
+}
+
+.icons
+{
+    width: 50%;
+    /* background: teal; */
+    position: absolute;
+    bottom:20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.icons img
+{
+    width: 50px;
+    transition: .5s;
+}
+
+
+.icons img:hover
+{
+    transform:scale(1.2);
+}
+
+
+
+@media screen and (max-width:768px) {
+   .container
+   {
+    margin-top: 0px;
+   }
+    nav .nav-logo {
+        width:20%;
+    }
+    nav
+    {
+        flex-direction: column;
+    }
+    nav .nav-links ul li a
+    {
+        margin: 0px 2px;
+
+    }
+    header 
+    {
+        flex-direction: column-reverse;
+        text-align: center;
+
+    }
+    .header-content,.header-img
+    {
+        width: 100%;
+    }
+    .header-content h2 
+    {
+        font-size: 30px;
+        margin: 2px;
+    }
+    .header-img
+    {
+        text-align: center;
+    }
+    .header-img img
+    {
+        width: 150px;
+    }
+    .icons
+    {
+        width: 100%;
+        bottom: 0px;
+    }
+
+    
+}
